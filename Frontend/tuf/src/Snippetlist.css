@@ -1,0 +1,48 @@
+.submission-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.submission-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.language {
+    background-color: #4a2b4463;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: antiquewhite;
+}
+
+.item-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.value {
+  flex: 1;
+}

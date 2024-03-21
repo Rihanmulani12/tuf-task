@@ -1,0 +1,113 @@
+  body{
+    background-color: #706d6d;
+  }
+  .form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .input-group > * {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .input-group > *:last-child {
+    margin-right: 0;
+  }
+  
+  .input-username,
+  .input {
+    width: 110% ;/* Adjust the width to your preference */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ff00e312;
+  }
+  
+  .input-std,
+  .input-sourcecode {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #e6dddd;
+    background-color: #100e0d73;
+  }
+  
+  .input-username::placeholder,
+  .input::placeholder,
+  .input-std::placeholder,
+  .input-sourcecode::placeholder {
+    color: #999;
+  }
+  
+  button {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
+    font-size: 17px;
+    padding: 1em 2.7em;
+    font-weight: 500;
+    background: #331933;
+    color: white;
+    border: none;
+    position: relative;
+    left: 40%;
+    top: 10px;
+    overflow: hidden;
+    border-radius: 0.6em;
+    cursor: pointer;
+  }
+  
+  .gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0.6em;
+    margin-top: -0.25em;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.3)
+    );
+  }
+  
+  .label {
+    position: relative;
+    top: -1px;
+  }
+  
+  .transition {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 500ms;
+    background-color: rgba(16, 185, 129, 0.6);
+    border-radius: 9999px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  button:hover .transition {
+    width: 14em;
+    height: 14em;
+  }
+  
+  button:active {
+    transform: scale(0.97);
+  }
+  
