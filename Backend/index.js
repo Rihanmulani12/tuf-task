@@ -28,6 +28,7 @@ db.connect((err) => {
   console.log('Connected to MySQL database');
 });
 
+
 // Handle submission of code snippets
 app.post('/submit', (req, res) => {
   const { username, language, stdin, code } = req.body;

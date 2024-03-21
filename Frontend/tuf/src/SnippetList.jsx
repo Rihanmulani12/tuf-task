@@ -7,7 +7,7 @@ const SnippetList = () => {
   useEffect(() => {
     const fetchSnippets = async () => {
       try {
-        const response = await fetch("http://localhost:3001/snippets");
+        const response = await fetch("https://backend-ten-opal-80.vercel.app/snippets");
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }

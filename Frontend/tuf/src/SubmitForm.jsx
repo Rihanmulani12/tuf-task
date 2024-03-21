@@ -20,7 +20,7 @@ const SubmitForm = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:3001/submit", {
+      const response = await fetch("https://backend-ten-opal-80.vercel.app/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
