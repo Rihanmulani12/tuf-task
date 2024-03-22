@@ -7,11 +7,12 @@ const SnippetList = () => {
   useEffect(() => {
     const fetchSnippets = async () => {
       try {
-        const response = await fetch("https://backend-ten-opal-80.vercel.app/snippets");
+        const response = await fetch("https://tuf-backend-gh8r.onrender.com/snippets");
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
         const data = await response.json();
+        // Assuming the data structure is an array of code objects
         setSnippets(data);
       } catch (error) {
         console.error("Error fetching code snippets:", error);
@@ -36,7 +37,7 @@ const SnippetList = () => {
             </div>
             <div className="content-row">
               <span className="label">Code Snippet:</span>
-              <span className="value">{snippet.codeSnippet}</span>
+              <span className="value">{snippet.code}</span> {/* Adjusted to display 'code' */}
             </div>
             <div className="content-row">
               <span className="label">Timestamp:</span>
