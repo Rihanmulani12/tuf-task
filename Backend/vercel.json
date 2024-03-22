@@ -1,0 +1,23 @@
+{
+    "version": 2,
+    "env": {
+      "DB_URL": "mongodb+srv://rihanmulani18:Rihan12@cluster1212.lamrxgz.mongodb.net"
+    },
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/submit",
+        "dest": "index.js"
+      },
+      {
+        "src": "/snippets",
+        "dest": "index.js"
+      }
+    ]
+  }
+  
